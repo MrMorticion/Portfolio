@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stayle.css">
+        <script src="javaScript.js"></script>
+        <title>Morph</title>
+    </head>
+    <body>
+        <header class="menu">
+            <a class="brand" href="#top">
+                <span class="logo">MORPH</span>
+                <span class="subtitle">DEVELOPER PORTFOLIO</span>
+            </a>
+            <button class="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="menu-list">
+                <span></span><span></span><span></span>
+            </button>
+            <nav>
+                <ul class="menu-list" id="menu-list">
+                    <li><a href="#projects">Проекты</a></li>
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#skills">Навыки</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="top">
+            <section class="hero">
+                <div class="hero-text">
+                    <p class="eyebrow smol-text">личные проекты. практические решения</p>
+                    <h1 class="main-title">Из идеи —<br><span class="nowrap">в работающий</span> <span class="accent">код.</span></h1>
+                    <p class="description">Я создаю проекты, которые решают реальные задачи и помогают развивать навыки программирования.</p>
+                    <a class="projects-button" href="#projects">Смотреть проекты</a>
+                </div>
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="visual-card visual-card-back">
+                        <span class="chip">&lt;/&gt;</span>
+                    </div>
+                    <div class="visual-card visual-card-front">
+                        <span class="chip-text">ghbdtn</span>
+                        <span class="chip-text chip-accent">привет</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="projects" id="projects">
+                <p class="section-label">01 / ПОРТФОЛИО</p>
+                <div class="section-head">
+                    <h2 class="section-title">Выбранные работы</h2>
+                    <p class="section-note">Два проекта, которые я довёл до рабочего состояния.</p>
+                </div>
+                <div class="cards">
+                    <article class="card">
+                        <div class="card-preview card-preview-ai" aria-hidden="true">
+                            <span class="chip">{ AI }</span>
+                        </div>
+                        <h3>Локальный ИИ-ассистент</h3>
+                        <p>Открывает файлы и приложения, находит информацию в интернете. Помогает работе за компьютером.</p>
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>Локальные модели</span>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card-preview card-preview-switch" aria-hidden="true">
+                            <span class="chip-text">ghbdtn</span>
+                            <span class="chip-text chip-accent">привет</span>
+                        </div>
+                        <h3>MorphSwitcher</h3>
+                        <p>Неправильная раскладка больше не повод перепечатывать текст. Приложение исправляет уже набранные символы.</p>
+                        <div class="tags">
+                            <span>Раскладка</span>
+                            <span>Автозамена</span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="about" id="about">
+                <div class="about-main">
+                    <p class="section-label">02 / ОБО МНЕ</p>
+                    <h2 class="about-title">Замечаю задачу.<br>Ищу решение.<br><span class="accent-purple">Пишу программу.</span></h2>
+                    <div class="about-icon" aria-hidden="true">{ <span class="accent">↗</span> }</div>
+                </div>
+                <div class="about-text">
+                    <p class="about-lead">Мне интересно делать вещи, которые помогают в обычной жизни.</p>
+                    <p>Так появились два проекта: локальный ИИ-помощник на Python и MorphSwitcher для исправления текста, набранного в неправильной раскладке.</p>
+                    <p>Сейчас я также разбираюсь с HTML, CSS и созданием сайтов. Хочу понимать, как идеи и дизайн превращаются в работающий интерфейс.</p>
+                </div>
+            </section>
+
+            <section class="experiment">
+                <p class="section-label">03 / ПОПРОБУЙ САМ</p>
+                <div class="experiment-head">
+                    <h2 class="section-title">Одна маленькая перемена — <span class="accent-purple">большая разница.</span></h2>
+                    <a class="link" href="#projects">Открыть MorphSwitcher →</a>
+                </div>
+                <div class="demo">
+                    <div class="demo-bar">
+                        <span>MORPHSWITCHER / LIVE DEMO</span>
+                        <button class="demo-toggle" id="demo-toggle" type="button">EN ⇄ RU</button>
+                    </div>
+                    <div class="demo-body">
+                        <div class="demo-pane">
+                            <span class="demo-label">Текст в неправильной раскладке</span>
+                            <p id="demo-before">ghbdtn</p>
+                        </div>
+                        <div class="demo-pane demo-pane-after">
+                            <span class="demo-label">Вот так лучше</span>
+                            <p id="demo-after">привет</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="skills" id="skills">
+                <p class="section-label">04 / НАВЫКИ</p>
+                <ul class="skill-list">
+                    <li><span>Python</span><span>используется в ИИ-проектах</span></li>
+                    <li><span>HTML &amp; CSS</span><span>вёрстка и интерфейсы</span></li>
+                    <li><span>Figma</span><span>осваиваю дизайн сайтов</span></li>
+                </ul>
+            </section>
+
+            <section class="cta" id="contacts">
+                <div class="cta-text">
+                    <h2 class="cta-title">Следующая идея<br>начинается <span class="accent-pink">с разговора.</span></h2>
+                </div>
+                <div class="cta-side">
+                    <span class="cta-arrow" aria-hidden="true">↗</span>
+                    <p>Есть идея или задача, которую стоит решить? Напишите мне.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <span class="logo">MORPH</span>
+            <span class="footer-note">© 2026 · Личные проекты</span>
+            <a href="#top">Наверх ↑</a>
+        </footer>
+    </body>
+    </html>
